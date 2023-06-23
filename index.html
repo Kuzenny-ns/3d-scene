@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        
+        <link rel="shortcut icon" href="#">
+        <title>3D Scene</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script type="module" crossorigin src="/3d-scene/assets/index-835bdf7c.js"></script>
+      <link rel="stylesheet" href="/3d-scene/assets/index-fa66ca24.css">
+    </head>
+    <body>
+        <canvas id="bg"></canvas>    
+        
+        <div id="about_element" style="position: fixed; left: 0px; right: 0px; top: 150px; height: 600px;
+        background-color: rgb(76, 104, 252); border-radius: 150px; margin: 0px 350px; z-index: 5; box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.59);">
+            <div style="position: absolute; top: 20%; font-size: 42px; left: 10px; right: 10px; font-family:'Verdana'; padding: 0px 30px;">
+                <span style="vertical-align: middle;">
+                    About <br> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eos in culpa recusandae molestias nihil eveniet amet porro unde nostrum,
+                    reprehenderit quae delectus consectetur ipsa, ipsum harum ipsam debitis
+                    possimus excepturi?
+                </span>
+            </div>
+        </div>
+
+        <header class="header" id="headelem">
+            <div style="position: absolute; left: 10px; right: 350px; top: 0px; bottom: 0px; font-size: 24px; font-family:'Verdana';">
+                <p style="margin: 10.5px 0px;">Lorem ipsum</p>
+            </div>
+            <div style="position: absolute; left: 310px; right: 350px; top: 0px; bottom: 0px; font-size: 24px; font-family:'Verdana';">
+                <p style="margin: 10.5px 0px;">About</p>
+            </div>
+            <div style="position: absolute; left: 410px; right: 350px; top: 0px; bottom: 0px; font-size: 24px; font-family:'Verdana';">
+                <p style="margin: 10.5px 0px;">Features</p>
+            </div>
+            <div style="position: absolute; left: 540px; right: 350px; top: 0px; bottom: 0px; font-size: 24px; font-family:'Verdana';">
+                <p style="margin: 10.5px 0px;">Advantages</p>
+            </div>
+        </header>
+
+        <div style="position: fixed; bottom: 30px; right: 50px; height: 120px; width: 50px; z-index: 3;">
+            <div class="ArrowButton" id="btn_up">
+                <div style="user-select: none;">↑</div>
+            </div>
+            <div class="ArrowButton" id="btn_down" style="bottom: 0px;">
+                <div style="user-select: none;">↓</div>
+            </div>
+        </div>
+
+        <!-- <div class="DescriptionBody" style="top: 2500px; left: 60%;" id="D1">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Provident, minus obcaecati! Ratione esse velit, quod 
+            voluptatum quidem fugit veniam tempora, eos maiores ad 
+            nesciunt dicta qui fuga. Obcaecati, vel assumenda?
+            <div class="DescriptionHead">
+                <div style="padding: 0px 10px 0px 10px;">
+                    IoT
+                </div>
+            </div>
+        </div>
+
+        <div class="DescriptionBody" style="top: 4800px; left: 5%;" id="D2">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Provident, minus obcaecati! Ratione esse velit, quod 
+            voluptatum quidem fugit veniam tempora, eos maiores ad 
+            nesciunt dicta qui fuga. Obcaecati, vel assumenda?
+            <div class="DescriptionHead">
+                <div style="padding: 0px 10px 0px 10px;">
+                    Blockchain
+                </div>
+            </div>
+        </div>
+
+        <div class="DescriptionBody" style="top: 6800px; left: 60%;" id="D3">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Provident, minus obcaecati! Ratione esse velit, quod 
+            voluptatum quidem fugit veniam tempora, eos maiores ad 
+            nesciunt dicta qui fuga. Obcaecati, vel assumenda?
+            <div class="DescriptionHead">
+                <div style="padding: 0px 10px 0px 10px;">
+                    MQTT
+                </div>
+            </div>
+        </div> -->
+
+        <div class="DBody" style="left: 60%;" id="D1">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Provident, minus obcaecati! Ratione esse velit, quod 
+            voluptatum quidem fugit veniam tempora, eos maiores ad 
+            nesciunt dicta qui fuga. Obcaecati, vel assumenda?
+            <div class="DHead">
+                <div style="padding: 0px 10px 0px 10px;">
+                    Description 1
+                </div>
+            </div>
+        </div>
+
+        <div class="DBody" style="right: 60%;" id="D2">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Provident, minus obcaecati! Ratione esse velit, quod 
+            voluptatum quidem fugit veniam tempora, eos maiores ad 
+            nesciunt dicta qui fuga. Obcaecati, vel assumenda?
+            <div class="DHead">
+                <div style="padding: 0px 10px 0px 10px;">
+                    Description 2
+                </div>
+            </div>
+        </div>
+
+        <div class="DBody" style="left: 60%;" id="D3">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Provident, minus obcaecati! Ratione esse velit, quod 
+            voluptatum quidem fugit veniam tempora, eos maiores ad 
+            nesciunt dicta qui fuga. Obcaecati, vel assumenda?
+            <div class="DHead">
+                <div style="padding: 0px 10px 0px 10px;">
+                    Description 3
+                </div>
+            </div>
+        </div>
+
+        <div style="position: absolute; top: 8550px; user-select: none; opacity: 0;">1</div>
+
+        <!-- <div style="position: relative; top: 7000px; left: 0px; right: 0px; background-color: rgb(76, 104, 252); height: 600px; -->
+        <!-- <div style="position: absolute; top: 8500px; left: 0px; right: 0px; background-color: rgb(76, 104, 252); height: 600px;
+        font-size: 40px; z-index: 2; font-family:'Verdana';" id="paralax-panel">
+            <div style="position: absolute; left: 35%; right: 35%; text-align: center; top: 50px;">
+                Advantages
+            </div>
+            <div style="position: absolute; left: 450px; top: 150px;">
+                Cost-efficient
+            </div>
+            <div style="position: absolute; left: 5%; right: 5%; text-align: center; top: 150px;">
+                Scalable
+            </div>
+            <div style="position: absolute; right: 450px; top: 150px;">
+                Reliable
+            </div>
+            <div style="position: relative; top: 600px; left: 0px; right: 0px; background-color: rgb(42, 44, 51); height: 360px;
+            font-size: 40px;">
+            </div>
+        </div> -->
+
+        <!-- <div style="position: absolute; top: 9650px; left: 0px; right: 0px; background-color: rgb(42, 44, 51); height: 500px;
+        font-size: 40px;">
+        </div> -->
+        
+
+        <!-- <div style="font-size: 150px; opacity: 0%;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Rem rerum obcaecati, tenetur odio nesciunt numquam ducimus
+        consectetur delectus dolorem minus! Nulla ex earum ullam
+        aspernatur deleniti tempore voluptatum a velit?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Rem rerum obcaecati, tenetur odio nesciunt numquam ducimus
+        consectetur delectus dolorem minus! Nulla ex earum ullam
+        aspernatur deleniti tempore voluptatum a velit?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Rem rerum obcaecati, tenetur odio nesciunt numquam ducimus
+        consectetur delectus dolorem minus! Nulla ex earum ullam
+        aspernatur deleniti tempore voluptatum a velit?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Rem rerum obcaecati, tenetur odio nesciunt numquam ducimus
+        consectetur delectus dolorem minus! Nulla ex earum ullam
+        aspernatur deleniti tempore voluptatum a velit?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Rem rerum obcaecati, tenetur odio nesciunt numquam ducimus
+        consectetur delectus dolorem minus! Nulla ex earum ullam
+        aspernatur deleniti tempore voluptatum a velit?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Rem rerum obcaecati, tenetur odio nesciunt numquam ducimus
+        consectetur delectus dolorem minus! Nulla ex earum ullam
+        aspernatur deleniti tempore voluptatum a velit?
+        </div> -->
+
+        <!-- <button class="block-right" id="BlcR" type="button" onclick="GoRight()">GO RIGHT</button>
+        <button class="block-left" id="BlcL" type="button" onclick="GoLeft()">GO LEFT</button>
+        <button class="block" id="CloseBtn" type="button" onclick="CloseLookUp()">X</button>
+
+        <div class="DescriptionBody" id="LI1">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Provident, minus obcaecati! Ratione esse velit, quod 
+            voluptatum quidem fugit veniam tempora, eos maiores ad 
+            nesciunt dicta qui fuga. Obcaecati, vel assumenda?
+            <div class="DescriptionHead">
+                Sensor And Acutator part of diagram
+            </div>
+        </div>
+
+        <div class="DescriptionBody" id="LI2">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Provident, minus obcaecati! Ratione esse velit, quod 
+            voluptatum quidem fugit veniam tempora, eos maiores ad 
+            nesciunt dicta qui fuga. Obcaecati, vel assumenda?
+            <div class="DescriptionHead">
+                BlockChain
+            </div>
+        </div>
+
+        <div class="DescriptionBody" id="LI3">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Provident, minus obcaecati! Ratione esse velit, quod 
+            voluptatum quidem fugit veniam tempora, eos maiores ad 
+            nesciunt dicta qui fuga. Obcaecati, vel assumenda?
+            <div class="DescriptionHead">
+                IoT
+            </div>
+        </div> -->
+
+         
+        
+    </body>
+</html>
