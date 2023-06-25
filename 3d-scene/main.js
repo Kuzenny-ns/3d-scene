@@ -190,7 +190,7 @@ composer.addPass(effectPass);
 //#region CAMERA ANIMATOR
 var Animator = new CameraAnimator(mainCamera, window.scrollY);
 
-Animator.AddKeyFrames(new KeyFrame(new THREE.Vector3(100, 150, 100), new THREE.Vector3(0, -10, 0), undefined, 0, undefined, 0.5, document.getElementById('about_element'), document.getElementById('headelem')));
+Animator.AddKeyFrames(new KeyFrame(new THREE.Vector3(100, 100, 100), new THREE.Vector3(0, 120, 0), undefined, 0, undefined, 0.5, document.getElementById('about_element')));
 Animator.AddKeyFrames(new KeyFrame(new THREE.Vector3(100, 150, 100), new THREE.Vector3(0, -10, 0), undefined, 600, undefined, undefined, document.getElementById('D1')));
 Animator.AddKeyFrames(new KeyFrame(new THREE.Vector3(-105, 60, 100), new THREE.Vector3(35, -10, 35), undefined, 3200, undefined, 0.05));
 
